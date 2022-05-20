@@ -1,0 +1,41 @@
+package com.example.hellospring.beans;
+
+public class Employee {
+  //员工编号
+  private String empNo;
+  //员工姓名
+  private String empName;
+  //部门信息
+  private Dept dept;
+
+  public Employee() {
+  }
+
+  public Employee(String empNo, String empName, Dept dept) {
+    this.empNo = empNo;
+    this.empName = empName;
+    this.dept = dept;
+  }
+
+
+  public void setEmpNo(String empNo) {
+    this.empNo = empNo;
+  }
+  public void setEmpName(String empName) {
+    this.empName = empName;
+  }
+  public void setDept(Dept dept) {
+    this.dept = dept;
+  }
+  public Dept getDept() {
+    return dept;
+  }
+  @Override
+  public String toString() {
+    return "Employee{" +
+        "empNo='" + empNo + '\'' +
+        ", empName='" + empName + '\'' +
+        ", dept=" + dept +
+        '}';
+  }
+}
